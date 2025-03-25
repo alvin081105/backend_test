@@ -16,7 +16,11 @@ public class HelloController {
         return "이건 백엔드 테스트 서비스입니다!";
     }
 
-
+    @GetMapping("/error")
+    public String error() {
+        throw new RuntimeException("Error occurred");
+    }
+    
 
 
 
