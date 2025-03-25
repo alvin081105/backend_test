@@ -10,4 +10,16 @@ public class HelloController {
     public String sayHello() {
         return "안녕";
     }
+
+    @GetMapping("/about")
+    public String about() {
+        return "이건 백엔드 테스트 서비스입니다!";
+    }
+
+
+
+
+
+
 }
+
