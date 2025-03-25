@@ -1,13 +1,11 @@
-package com.example.helloapp.controller;
+package com.example.helloapp;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@RestController
-public class HelloController {
-
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "안녕";
+@SpringBootApplication
+public class HelloappApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(HelloappApplication.class, args);
     }
 }
